@@ -1,0 +1,119 @@
+/* ABOUT Grid */
+.about-grid {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) repeat(12, minmax(0, 70px)) minmax(20px, 1fr);
+  grid-gap: 20px;
+}
+
+.about-grid-image {
+  grid-row: 2;
+  grid-column: 3 / 13;
+}
+
+.about-grid-text,
+.about-grid-title {
+  grid-row: 1;
+  grid-column: 3 / 13;
+  text-align: left;
+}
+
+.about-grid-quotes {
+  grid-column: 3 / 13;
+  grid-row: 3;
+  list-style-type: none;
+}
+
+.about-grid-quotes blockquote {
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  color: #4CA2C2;
+  padding: 0 0 1px 0;  
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.about-grid-quotes cite {
+  font-family: 'Raleway';
+  color: #111;
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  display: inline-block;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #4CA2C2;
+  margin-bottom: 40px;
+}
+
+.fa {	
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #4CA2C2;
+
+}
+
+
+
+/*ABOUT grid - desktop version*/
+
+@media only screen and (min-width: 1024px) {
+  img {
+    width: 65%;
+  }
+  
+  .about-grid {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) repeat(12, minmax(0, 70px)) minmax(20px, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .about-grid-image {
+    grid-row: 1;
+    grid-column: 3 / 10;
+  }
+
+  .about-grid-media {
+    grid-column: 2 / 9;
+  }
+  
+  .about-grid-title {
+    grid-column: 8 / span 5;
+    text-align: left;
+  }
+  
+  .about-grid-text {
+    grid-row: 1;
+    grid-column: 8 / span 5;
+    text-align: left;
+  }
+  
+  .about-grid-quotes {
+    margin-top: 50px;
+    grid-column: 3 / 13;
+    grid-row: 2;
+  }
+  
+  .about-grid-media,
+  .about-grid-title {
+    grid-row: 1;
+  }
+
+  .about-grid-quotes cite {
+    margin-bottom: 30px;
+  }
+
+  .about-grid-quotes blockquote {
+    font-size: 18px;
+    line-height: 35px; 
+  }
+}
+
